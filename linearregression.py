@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 from matplotlib import style
 style.use('ggplot')
-
+import pandas as pd
+import numpy as np
 
 def grad_runner(x,y,a,b,m,iterate):
     new_m=m
@@ -35,15 +36,21 @@ def run():
     a=0.0001#learning_rate
     initial_b = 0 # initial y-intercept guess
     initial_m = 0 # initial slope guess
-    x=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27]
-    y=[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28]
-    x_test=[7.0,8.0,9.0,10.0]
+    linear_train = pd.read_excel("cricket chirps vs temperature.xls")
+    x=np.array(linear_train['X'],)
+    y=np.array(linear_train['Y'],)
+    x_test=np.array(linear_train['X'],)
     iteration=1000
     [b,m]=grad_runner(x,y,a,initial_b,initial_m,iteration)
     k=predict(x_test,b,m)
-    plt.scatter(x_test,k,s=50)
-    plt.plot(x_test,k)
+    plt.xlabel('chirps/sec for the striped ground cricket')
+    plt.ylabel('temperature in degrees Fahrenheit')
+    plt.title(' Cricket Chirps Vs. Temperature')
+    plt.scatter(x,y,label='Points')
+    plt.plot(x_test,k,label='Hypothesis')
+    plt.legend()
     plt.show()
+    #Data set used from http://college.cengage.com/mathematics/brase/understandable_statistics/7e/students/datasets/slr/frames/frame.html
     
  
 
