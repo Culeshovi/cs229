@@ -24,7 +24,6 @@ def gradient_ascent_algorithm(x,y,a,b,m):
         for j in range(len(x[i])):
             h=x[i][j]
             new_m[j]=new_m[j]+(1/n)*h*(y[i]-logisticfunction(k,b,m))
-
     m1=m+(a*new_m)
     b1=b+(a*new_b)
     return [b1,m1]
@@ -60,11 +59,7 @@ def run():
     y=np.array(linear_train["LOW"])
     x1=np.array(linear_train["AGE"])
     iteration=1000
-
- 
-    
     [b,m]=logistic_runner(x,y,a,initial_b,initial_m,iteration)
-    
     k=predict(x,b,m)
     plt.xlabel('AGE')
     plt.ylabel('LOW BODY WEIGHT')
