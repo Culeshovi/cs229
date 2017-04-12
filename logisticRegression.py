@@ -35,7 +35,7 @@ def logisticfunction(x,b,m):
     y=1.0/(1.0+math.exp(-s))
     return y
     
-def prelogisticfunction(x,b,m):   
+def postlogisticfunction(x,b,m):   #Using Digression ie forcing the value to output either 1 or 0
     c=x*m
     s=(b+sum(c))
     if s>=0.0:
