@@ -45,7 +45,7 @@ def postlogisticfunction(x,b,m):   #Using Digression ie forcing the value to out
 def predict(x,b,m):#Predicter Function
     y=[]
     for i in range(len(x)):
-        k=prelogisticfunction(x[i],b,m)
+        k=postlogisticfunction(x[i],b,m)
         y.append(k)
     return y
         
