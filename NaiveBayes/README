@@ -1,3 +1,5 @@
+This is written by following this excercise http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex6/ex6.html
+
 This dataset comes from the Lingspam Dataset, 
 specifically, the lemm-stop subset. The emails have been
 edited to remove punctuation and standalone numbers.
