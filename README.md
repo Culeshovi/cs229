@@ -1,9 +1,9 @@
 # cs229
 # Machine Learning
 
-Machine Learning is basically giving computers the ability to learn without being explicitly programmed.Machine learning models are trained over large datasets to improve their predicting accuracy.
+Machine Learning is basically giving computers the ability to learn without being explicitly programmed.It is a subset of Artificaial Intelligence(AI).The first idea of a thinking machine was proposed by the father of modern computer science Alan Turing in his research paper 'The Imitation Game' in the late 1940's.We use machine learning in our daily life without even knowing from movie recommendation system used by netflix to face recogniztion system used by snapchat.
 
-These algorithms are written in Python by using simple libraries like matplotlib, numpy, pandas and scipy.
+These models are written in Python3 by using simple libraries like matplotlib, numpy, pandas and scipy.
 They are written by following the course cs229 of Standford University. The instructor of this course is Andrew Ng, who is VP & Chief Scientist of Baidu; Co-Chairman and Co-Founder of Coursera; and an Adjunct Professor at Stanford University.
 
 The youtube lecture link is https://www.youtube.com/playlist?list=PLA89DCFA6ADACE599&spfreload=10 
